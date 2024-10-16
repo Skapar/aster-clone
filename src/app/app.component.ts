@@ -10,19 +10,20 @@ import {FeaturedCarsComponent} from './Zein/carSearchModule/FeaturedCars.compone
 import {FooterComponent} from './Zein/carSearchModule/Footer.component'
 import {SearchFormComponent} from './Zein/carSearchModule/SearchForm.component'
 import { HeaderComponent } from './Zein/carSearchModule/Header.component';
-
+import { PopularCarsComponent } from './Zein/carSearchModule/PopularCars.component';
+import { PrivateListingsComponent } from './Zein/carSearchModule/PrivateListings.component';
 // import { CreditCalculatorComponent } from './components/carSearchModule/Header.component';
 
 
 
-// Добавьте здесь и другие компоненты, которые вы хотите использовать
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    BodyTypeSearchComponent,  // Импортируйте здесь ваши компоненты
+    BodyTypeSearchComponent,  
     BudgetSearchComponent,
     CarSearchComponent,
     FeaturedCarsComponent,
@@ -31,7 +32,9 @@ import { HeaderComponent } from './Zein/carSearchModule/Header.component';
     HeaderComponent,
     NewCarsComponent,
     CreditCalculatorComponent,
-    UsedTiresComponent
+    UsedTiresComponent,
+    PopularCarsComponent,
+    PrivateListingsComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
