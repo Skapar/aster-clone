@@ -108,6 +108,36 @@ export class PrivateListingsComponent {
       location: "Алматы",
       date: "31 марта",
     },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/14f1bdb0ee360494829eeaaf644aa9569d2886b9593c1f7e91939f9cc9e9e07c?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
+      price: "6 000 000 ₸",
+      monthlyPrice: "от 147 060₸/мес",
+      name: "Dodge Charger 2006",
+      specs: "5.7 л • Автомат • Задний",
+      location: "Алматы",
+      date: "31 марта",
+    },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/14f1bdb0ee360494829eeaaf644aa9569d2886b9593c1f7e91939f9cc9e9e07c?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
+      price: "6 000 000 ₸",
+      monthlyPrice: "от 147 060₸/мес",
+      name: "Dodge Charger 2006",
+      specs: "5.7 л • Автомат • Задний",
+      location: "Алматы",
+      date: "31 марта",
+    },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/14f1bdb0ee360494829eeaaf644aa9569d2886b9593c1f7e91939f9cc9e9e07c?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
+      price: "6 000 000 ₸",
+      monthlyPrice: "от 147 060₸/мес",
+      name: "Dodge Charger 2006",
+      specs: "5.7 л • Автомат • Задний",
+      location: "Алматы",
+      date: "31 марта",
+    },
     // Add more private listing objects here...
   ];
 }

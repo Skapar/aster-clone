@@ -1,7 +1,7 @@
 
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { HeaderComponent } from "./Header.component";
+import { HeaderComponent } from "./Header.component"
 import { SearchFormComponent } from "./SearchForm.component";
 import { FeaturedCarsComponent } from "./FeaturedCars.component";
 import { NewCarsComponent } from "./NewCars.component";

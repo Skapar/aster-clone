@@ -127,6 +127,33 @@ export class BudgetSearchComponent {
       location: "Шымкент",
       date: "4 октября",
     },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/77aa54600aebc88e1449832832828580cb5844809d6a68b8da9d935a4443996c?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
+      price: "2 500 000 ₸",
+      name: "Nissan Maxima 1999",
+      specs: "3.0 л • Автомат • Передний • 246 070 км",
+      location: "Шымкент",
+      date: "4 октября",
+    },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/77aa54600aebc88e1449832832828580cb5844809d6a68b8da9d935a4443996c?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
+      price: "2 500 000 ₸",
+      name: "Nissan Maxima 1999",
+      specs: "3.0 л • Автомат • Передний • 246 070 км",
+      location: "Шымкент",
+      date: "4 октября",
+    },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/77aa54600aebc88e1449832832828580cb5844809d6a68b8da9d935a4443996c?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
+      price: "2 500 000 ₸",
+      name: "Nissan Maxima 1999",
+      specs: "3.0 л • Автомат • Передний • 246 070 км",
+      location: "Шымкент",
+      date: "4 октября",
+    },
     // Add more budget car objects here...
   ];
 }

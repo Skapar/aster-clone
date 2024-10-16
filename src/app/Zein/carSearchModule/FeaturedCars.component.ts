@@ -106,6 +106,36 @@ export class FeaturedCarsComponent {
       location: "Шымкент",
       date: "4 октября",
     },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/dbc5fe5c1efe18a361839fa03221dbb3ae7e664ea872bf6a229e868b459fdec5?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
+      price: "4 220 000 ₸",
+      monthlyPrice: "от 103 432₸/мес",
+      name: "LADA (ВАЗ) Granta 2020",
+      specs: "1.6 л • Автомат • Передний • 117 211 км",
+      location: "Шымкент",
+      date: "4 октября",
+    },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/dbc5fe5c1efe18a361839fa03221dbb3ae7e664ea872bf6a229e868b459fdec5?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
+      price: "4 220 000 ₸",
+      monthlyPrice: "от 103 432₸/мес",
+      name: "LADA (ВАЗ) Granta 2020",
+      specs: "1.6 л • Автомат • Передний • 117 211 км",
+      location: "Шымкент",
+      date: "4 октября",
+    },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/TEMP/dbc5fe5c1efe18a361839fa03221dbb3ae7e664ea872bf6a229e868b459fdec5?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
+      price: "4 220 000 ₸",
+      monthlyPrice: "от 103 432₸/мес",
+      name: "LADA (ВАЗ) Granta 2020",
+      specs: "1.6 л • Автомат • Передний • 117 211 км",
+      location: "Шымкент",
+      date: "4 октября",
+    },
     // Add more car objects here...
   ];
 }

@@ -1,5 +1,4 @@
-
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
@@ -95,16 +94,5 @@ import { CommonModule } from "@angular/common";
   imports: [CommonModule],
 })
 export class UsedTiresComponent {
-  usedTires = [
-    {
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/ec0a93af25a7d18efaaaf7b10fb96858b43b2fd159beab4b08025fa8d11498c8?placeholderIfAbsent=true&apiKey=1961f3cb0ee74210b21ba84ee064973c",
-      name: "Farroad FRD16",
-      price: "25 917 ₸",
-      specs: "Летние / 185 70 R14",
-      location: "Алматы",
-      set: "Комплект из 3 шин",
-    },
-    // Add more tire objects here...
-  ];
+  @Input() usedTires: any[] = [];
 }
