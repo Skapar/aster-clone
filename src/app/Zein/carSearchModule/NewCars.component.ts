@@ -45,8 +45,6 @@ import { CommonModule } from "@angular/common";
       background-color: #fff;
       border-radius: 14px;
       overflow: hidden;
-    Continuing from where we left off:
-
     }
     .car-image {
       width: 100%;

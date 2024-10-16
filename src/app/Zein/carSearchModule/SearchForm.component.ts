@@ -61,11 +61,11 @@ import { FormsModule } from "@angular/forms";
   styles: [
     `
       .search-section {
+        overflow-x: hidden;
         background-color: #f2f4f7;
         display: flex;
         width: 100%;
         justify-content: center;
-        padding: 34px 70px;
       }
       .search-container {
         width: 100%;
@@ -134,7 +134,7 @@ import { FormsModule } from "@angular/forms";
         margin-top: 14px;
       }
       .search-image {
-        width: 60%;
+        width: 50%;
         height: auto;
       }
       @media (max-width: 991px) {
