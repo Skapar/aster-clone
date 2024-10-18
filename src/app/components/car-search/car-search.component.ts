@@ -1,17 +1,17 @@
 
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { HeaderComponent } from "./Header.component"
-import { SearchFormComponent } from "./SearchForm.component";
-import { FeaturedCarsComponent } from "./FeaturedCars.component";
-import { NewCarsComponent } from "./NewCars.component";
-import { CreditCalculatorComponent } from "./CreditCalculator.component";
-import { UsedTiresComponent } from "./UsedTires.component";
-import { PrivateListingsComponent } from "./PrivateListings.component";
-import { BudgetSearchComponent } from "./BudgetSearch.component";
-import { BodyTypeSearchComponent } from "./BodyTypeSearch.component";
-import { PopularCarsComponent } from "./PopularCars.component";
-import { FooterComponent } from "./Footer.component";
+import { HeaderComponent } from "../header/header.component"
+import { SearchFormComponent } from "../search-form/search-form.component";
+import { FeaturedCarsComponent } from "../featured-cars/featured-cars.component";
+import { NewCarsComponent } from "../new-cars/new-cars.component";
+import { CreditCalculatorComponent } from "../credit-calculator/credit-calculator.component";
+import { UsedTiresComponent } from "../used-tires/used-tires.component";
+import { PrivateListingsComponent } from "../private-listings/private-listings.component";
+import { BudgetSearchComponent } from "../budget-search/budget-search.component";
+import { BodyTypeSearchComponent } from "../body-type-search/body-type-search.component";
+import { PopularCarsComponent } from "../popular-cars/popular-cars.component";
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: "car-search",

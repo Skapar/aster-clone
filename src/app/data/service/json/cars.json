@@ -1,0 +1,68 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2021,
+      "color": "Silver",
+      "price": 20000,
+      "features": {
+        "transmission": "Automatic",
+        "fuelType": "Gasoline",
+        "mileage": 15000,
+        "seatingCapacity": 5
+      },
+      "seller": {
+        "name": "John Doe",
+        "contact": {
+          "phone": "+1-234-567-890",
+          "email": "john@example.com"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "make": "Honda",
+      "model": "Civic",
+      "year": 2020,
+      "color": "Black",
+      "price": 22000,
+      "features": {
+        "transmission": "Manual",
+        "fuelType": "Hybrid",
+        "mileage": 12000,
+        "seatingCapacity": 5
+      },
+      "seller": {
+        "name": "Jane Smith",
+        "contact": {
+          "phone": "+1-987-654-321",
+          "email": "jane@example.com"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "make": "Tesla",
+      "model": "Model 3",
+      "year": 2022,
+      "color": "White",
+      "price": 45000,
+      "features": {
+        "transmission": "Automatic",
+        "fuelType": "Electric",
+        "mileage": 5000,
+        "seatingCapacity": 5,
+        "autopilot": true
+      },
+      "seller": {
+        "name": "Elon Musk",
+        "contact": {
+          "phone": "+1-555-555-555",
+          "email": "elon@example.com"
+        }
+      }
+    }
+  ]
+}

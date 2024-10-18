@@ -136,6 +136,5 @@ export class FeaturedCarsComponent {
       location: "Шымкент",
       date: "4 октября",
     },
-    // Add more car objects here...
   ];
 }

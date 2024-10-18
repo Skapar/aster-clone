@@ -154,6 +154,5 @@ export class BudgetSearchComponent {
       location: "Шымкент",
       date: "4 октября",
     },
-    // Add more budget car objects here...
   ];
 }
