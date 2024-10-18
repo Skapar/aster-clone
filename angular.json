@@ -9,6 +9,10 @@
         "@schematics/angular:component": {
           "path": "src/app/components",
           "flat": false
+        },
+        "page": {
+          "path": "src/app/pages",
+          "flat": false
         }
       },
       "root": "",
