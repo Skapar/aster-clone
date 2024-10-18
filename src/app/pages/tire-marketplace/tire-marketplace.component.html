@@ -1,0 +1,102 @@
+<div class="tire-marketplace">
+  <div class="container">
+    <mat-card class="search-section">
+      <mat-card-content>
+        <mat-card-title><h3 class="title-search">Подобрать шины по:</h3></mat-card-title>
+        <form class="search-form">
+          <mat-form-field appearance="outline">
+            <mat-label class = "search-form-title">Ширина профиля</mat-label>
+            <mat-select>
+              <mat-option value="205">205</mat-option>
+              <mat-option value="215">215</mat-option>
+              <mat-option value="225">225</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label class = "search-form-title">Высота профиля</mat-label>
+            <mat-select>
+              <mat-option value="55">55</mat-option>
+              <mat-option value="60">60</mat-option>
+              <mat-option value="65">65</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label class = "search-form-title">Диаметр, в дюймах</mat-label>
+            <mat-select>
+              <mat-option value="16">16</mat-option>
+              <mat-option value="17">17</mat-option>
+              <mat-option value="18">18</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label class = "search-form-title">Сезонность</mat-label>
+            <mat-select>
+              <mat-option value="summer">Летние</mat-option>
+              <mat-option value="winter">Зимние</mat-option>
+              <mat-option value="all-season">Всесезонные</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label class = "search-form-title">Бренд</mat-label>
+            <mat-select>
+              <mat-option value="55">Yokohama</mat-option>
+              <mat-option value="60">RoadX</mat-option>
+              <mat-option value="65">RXFrost</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label class = "search-form-title">Год</mat-label>
+            <mat-select>
+              <mat-option value="55">2022</mat-option>
+              <mat-option value="60">2023</mat-option>
+              <mat-option value="65">2023</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label class = "search-form-title">Цена</mat-label>
+            <mat-select>
+              <mat-option value="55">100</mat-option>
+              <mat-option value="60">200</mat-option>
+              <mat-option value="65">300</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label class = "search-form-title">Шипы</mat-label>
+            <mat-select>
+              <mat-option value="55">55</mat-option>
+              <mat-option value="60">60</mat-option>
+              <mat-option value="65">65</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary">Сбросить фильтры</button>
+          <button mat-raised-button color="primary">Показать 739</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+
+    <h2 class="section-title">БУ шины в Казахстане</h2>
+    <div class="tire-grid">
+      <mat-card *ngFor="let tire of tires" class="tire-card">
+        <img mat-card-image [src]="tire.image" [alt]="tire.name">
+        <mat-card-content>
+          <h3>{{ tire.name }}</h3>
+          <p class="price">{{ tire.price }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-stroked-button (click)="addToFavorites(tire.id)">
+            <mat-icon>favorite</mat-icon> В избранное
+          </button>
+          <button mat-raised-button color="primary" (click)="buyTire(tire.id)">Купить</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
