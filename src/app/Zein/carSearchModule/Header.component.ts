@@ -19,15 +19,9 @@ import { CommonModule } from "@angular/common";
         position: relative;
         width: 100%;
       }
-    
-      .menu-icon {
-        width: 18px;
-        height: 18px;
-      }
       .header-bg {
         width: 100%;
         height: auto;
-        // margin-top: 420px;
       }
       @media (max-width: 991px) {
         .header-bg {
