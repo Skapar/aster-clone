@@ -6,6 +6,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { tireJson } from '../../data/service/json/tireJson'
+import { HeaderComponent } from '../../components/header/header.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-tire-marketplace',
@@ -18,7 +20,9 @@ import { tireJson } from '../../data/service/json/tireJson'
     MatCardModule,
     MatIconModule,
     NgFor,
-    CommonModule
+    CommonModule,
+    HeaderComponent,
+    FooterComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

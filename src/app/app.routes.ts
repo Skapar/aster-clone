@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import {AuthComponent} from './components/auth/auth-component.component';
 import { TireMarketplaceComponent } from './pages/tire-marketplace/tire-marketplace.component';
 import {SellingCarsComponent} from './pages/selling-cars/selling-cars.component';
+import { FavoritesComponent } from './pages/favorites/favorites.component';
 
 export const routes: Routes = [
   {path: 'auth', component: AuthComponent, title: 'auth'},
@@ -10,4 +11,5 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent, title: 'Home' },
   { path: 'tires', component: TireMarketplaceComponent, title: 'Tire' },
   {path: 'cars-kz', component: SellingCarsComponent, title: 'Cars'},
+  { path: 'favorites', component: FavoritesComponent, title: 'Favorite' },
 ];
