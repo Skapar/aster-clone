@@ -1,0 +1,90 @@
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff; /* White background for filter bar */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group,
+.input-group,
+.year-group,
+.price-group,
+.action-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between items */
+  margin-bottom: 16px;
+}
+
+/* New styles for the select wrapper */
+.select-wrapper {
+  position: relative;
+  width: 200px; /* Adjust width as needed */
+}
+
+.filter-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Border similar to the design */
+  border-radius: 4px;
+  background-color: #fff; /* White background for the select */
+  appearance: none; /* Remove default styling */
+  cursor: pointer;
+  font-size: 16px; /* Font size */
+  transition: border-color 0.2s;
+
+  &:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+  }
+
+  /* Adding a custom arrow */
+  &::after {
+    content: '▼'; /* Down arrow */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Allow clicking through */
+    color: #999; /* Arrow color */
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-group,
+  .input-group,
+  .year-group,
+  .price-group,
+  .action-group {
+    flex-direction: column; /* Stack elements on smaller screens */
+  }
+
+  .select-wrapper {
+    width: 100%; /* Make select full width */
+  }
+}
+
+button{
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #0066cc;
+  color: white;
+  height: 40px;
+}
+
+input{
+  height: 25px;
+  border: solid 1px gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+select{
+  height: 35px;
+  border: solid 1px gray;
+  border-radius: 10px;
+  padding: 10px;
+}

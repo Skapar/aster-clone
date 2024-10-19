@@ -1,0 +1,20 @@
+<app-filter-bar></app-filter-bar>
+
+<section class="new-cars">
+  <h2 class="section-title">Продажа Авто в Казахстане</h2>
+  <p>найдено 18 333 авто</p>
+  <div class="car-grid">
+    <div class="car-card" *ngFor="let car of Cars">
+      <img [src]="car.image" [alt]="car.name" class="car-image" />
+      <div class="car-details">
+        <span class="car-price">{{ car.price }}</span>
+        <span class="car-monthly-price">{{ car.monthlyPrice }}</span>
+        <h3 class="car-name">{{ car.name }}</h3>
+        <p class="car-specs">{{ car.specs }}</p>
+        <p class="car-location">{{ car.location }}</p>
+        <p class="car-date">{{ car.date }}</p>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="show-more">Показать новые авто</a>
+</section>
