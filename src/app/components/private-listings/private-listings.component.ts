@@ -3,8 +3,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-private-listings",
-  template: `
+    selector: "app-private-listings",
+    template: `
     <section class="private-listings">
       <h2 class="section-title">Объявления от частных лиц</h2>
       <div class="car-grid">
@@ -25,8 +25,8 @@ import { CommonModule } from "@angular/common";
       <a href="#" class="show-more">Показать объявления от частных лиц</a>
     </section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .private-listings {
         background-color: #f9fafb;
         padding: 40px 0;
@@ -92,9 +92,8 @@ import { CommonModule } from "@angular/common";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class PrivateListingsComponent {
   privateListings = [

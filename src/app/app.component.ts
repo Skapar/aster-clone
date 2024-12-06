@@ -4,15 +4,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { TireMarketplaceComponent } from './pages/tire-marketplace/tire-marketplace.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    HomeComponent,
-    TireMarketplaceComponent
-  ],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    imports: [
+        RouterOutlet,
+        HomeComponent,
+        TireMarketplaceComponent
+    ],
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'my-angular-app';

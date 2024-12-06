@@ -2,8 +2,8 @@ import { Component, Input } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-used-tires",
-  template: `
+    selector: "app-used-tires",
+    template: `
     <section class="used-tires">
       <h2 class="section-title">Б/У шины в Алматы</h2>
       <div class="tire-grid">
@@ -22,8 +22,8 @@ import { CommonModule } from "@angular/common";
       <a href="#" class="show-more">Показать все шины</a>
     </section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .used-tires {
         background-color: #f9fafb;
         padding: 40px 0;
@@ -89,9 +89,8 @@ import { CommonModule } from "@angular/common";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class UsedTiresComponent {
   @Input() usedTires: any[] = [];

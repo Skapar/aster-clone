@@ -9,8 +9,8 @@ import { AdditionalFilters } from "../filter-bar/AdditionalFilters.component";
 import { SearchActions } from "../filter-bar/SearchActions.component";
 
 @Component({
-  selector: "car-search-form",
-  template: `
+    selector: "car-search-form",
+    template: `
     <section class="car-search-form">
       <header class="form-header">
         <search-filters></search-filters>
@@ -28,8 +28,8 @@ import { SearchActions } from "../filter-bar/SearchActions.component";
       <search-actions></search-actions>
     </section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .car-search-form {
         border-radius: 20px;
         background-color: #fff;
@@ -71,14 +71,13 @@ import { SearchActions } from "../filter-bar/SearchActions.component";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [
-    CommonModule,
-    SearchFilters,
-    SearchOptions,
-    AdditionalFilters,
-    SearchActions,
-  ],
+    ],
+    imports: [
+        CommonModule,
+        SearchFilters,
+        SearchOptions,
+        AdditionalFilters,
+        SearchActions,
+    ]
 })
 export class CarSearchFormComponent {}

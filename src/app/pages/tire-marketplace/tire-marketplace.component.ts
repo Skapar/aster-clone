@@ -10,21 +10,20 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
-  selector: 'app-tire-marketplace',
-  standalone: true,
-  templateUrl: './tire-marketplace.component.html',
-  styleUrls: ['./tire-marketplace.component.css'],
-  imports: [
-    MatSelectModule,
-    MatButtonModule,
-    MatCardModule,
-    MatIconModule,
-    NgFor,
-    CommonModule,
-    HeaderComponent,
-    FooterComponent
-  ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    selector: 'app-tire-marketplace',
+    templateUrl: './tire-marketplace.component.html',
+    styleUrls: ['./tire-marketplace.component.css'],
+    imports: [
+        MatSelectModule,
+        MatButtonModule,
+        MatCardModule,
+        MatIconModule,
+        NgFor,
+        CommonModule,
+        HeaderComponent,
+        FooterComponent
+    ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TireMarketplaceComponent implements OnInit {
   tires: Tire[] = tireJson;

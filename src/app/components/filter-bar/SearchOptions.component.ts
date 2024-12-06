@@ -5,8 +5,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "search-options",
-  template: `
+    selector: "search-options",
+    template: `
     <div class="search-options">
       <div class="option-selects">
         <div class="select-wrapper">
@@ -75,8 +75,8 @@ import { CommonModule } from "@angular/common";
       </div>
     </div>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .search-options {
         display: flex;
         margin-top: 24px;
@@ -174,8 +174,7 @@ import { CommonModule } from "@angular/common";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class SearchOptions {}

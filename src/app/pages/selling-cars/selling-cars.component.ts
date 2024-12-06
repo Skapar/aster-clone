@@ -3,14 +3,13 @@ import {NgForOf} from "@angular/common";
 import {FilterBarComponent} from '../../components/filter-bar/filter-bar.component';
 
 @Component({
-  selector: 'app-selling-cars',
-  standalone: true,
-  imports: [
-    NgForOf,
-    FilterBarComponent
-  ],
-  templateUrl: './selling-cars.component.html',
-  styleUrl: './selling-cars.component.css'
+    selector: 'app-selling-cars',
+    imports: [
+        NgForOf,
+        FilterBarComponent
+    ],
+    templateUrl: './selling-cars.component.html',
+    styleUrl: './selling-cars.component.css'
 })
 export class SellingCarsComponent {
  Cars = [

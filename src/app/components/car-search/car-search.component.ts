@@ -14,8 +14,8 @@ import { PopularCarsComponent } from "../popular-cars/popular-cars.component";
 import { FooterComponent } from "../footer/footer.component";
 
 @Component({
-  selector: "car-search",
-  template: `
+    selector: "car-search",
+    template: `
     <main class="car-search-page">
       <app-header></app-header>
       <section class="main-content">
@@ -32,8 +32,8 @@ import { FooterComponent } from "../footer/footer.component";
       <app-footer></app-footer>
     </main>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .car-search-page {
         background-color: #fff;
         display: flex;
@@ -55,21 +55,20 @@ import { FooterComponent } from "../footer/footer.component";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [
-    CommonModule,
-    HeaderComponent,
-    SearchFormComponent,
-    FeaturedCarsComponent,
-    NewCarsComponent,
-    CreditCalculatorComponent,
-    UsedTiresComponent,
-    PrivateListingsComponent,
-    BudgetSearchComponent,
-    BodyTypeSearchComponent,
-    PopularCarsComponent,
-    FooterComponent,
-  ],
+    ],
+    imports: [
+        CommonModule,
+        HeaderComponent,
+        SearchFormComponent,
+        FeaturedCarsComponent,
+        NewCarsComponent,
+        CreditCalculatorComponent,
+        UsedTiresComponent,
+        PrivateListingsComponent,
+        BudgetSearchComponent,
+        BodyTypeSearchComponent,
+        PopularCarsComponent,
+        FooterComponent,
+    ]
 })
 export class CarSearchComponent {}

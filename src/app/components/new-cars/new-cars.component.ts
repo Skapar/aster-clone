@@ -3,8 +3,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-new-cars",
-  template: `
+    selector: "app-new-cars",
+    template: `
     <section class="new-cars">
       <h2 class="section-title">Новые авто из салона</h2>
       <div class="car-grid">
@@ -23,8 +23,8 @@ import { CommonModule } from "@angular/common";
       <a href="#" class="show-more">Показать новые авто</a>
     </section>
   `,
-  styles: [
-    `
+    styles: [
+        `
     .new-cars {
       background-color: #f9fafb;
       padding: 40px 0;
@@ -88,9 +88,8 @@ import { CommonModule } from "@angular/common";
       }
     }
   `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class NewCarsComponent {
   newCars = [

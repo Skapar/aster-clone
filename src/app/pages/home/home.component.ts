@@ -15,24 +15,22 @@ import { PrivateListingsComponent } from '../../components/private-listings/priv
 // import { CreditCalculatorComponent } from './components/carSearchModule/Header.component';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    BodyTypeSearchComponent,
-    BudgetSearchComponent,
-    CarSearchComponent,
-    FeaturedCarsComponent,
-    FooterComponent,
-    SearchFormComponent,
-    HeaderComponent,
-    NewCarsComponent,
-    CreditCalculatorComponent,
-    UsedTiresComponent,
-    PopularCarsComponent,
-    PrivateListingsComponent
-  ],
-  templateUrl: './home.component.html',
-
+    selector: 'app-home',
+    imports: [
+        RouterOutlet,
+        BodyTypeSearchComponent,
+        BudgetSearchComponent,
+        CarSearchComponent,
+        FeaturedCarsComponent,
+        FooterComponent,
+        SearchFormComponent,
+        HeaderComponent,
+        NewCarsComponent,
+        CreditCalculatorComponent,
+        UsedTiresComponent,
+        PopularCarsComponent,
+        PrivateListingsComponent
+    ],
+    templateUrl: './home.component.html'
 })
 export class HomeComponent {}

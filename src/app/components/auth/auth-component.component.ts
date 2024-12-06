@@ -5,13 +5,12 @@ import { AuthenticationService} from './auth.service';
 import { Router} from '@angular/router';
 
 @Component({
-  selector: 'app-auth',
-  standalone: true,
-  imports: [
-    FormsModule, RouterModule
-  ],
-  templateUrl: './auth.component.html',
-  styleUrl: './auth-component.css'
+    selector: 'app-auth',
+    imports: [
+        FormsModule, RouterModule
+    ],
+    templateUrl: './auth.component.html',
+    styleUrl: './auth-component.css'
 })
 export class AuthComponent {
   username: string = '';

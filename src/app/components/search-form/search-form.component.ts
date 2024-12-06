@@ -4,8 +4,8 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 
 @Component({
-  selector: "app-search-form",
-  template: `
+    selector: "app-search-form",
+    template: `
     <section class="search-section">
       <div class="search-container">
         <h1 class="search-title">Проверенные авто с гарантией</h1>
@@ -56,8 +56,8 @@ import { FormsModule } from "@angular/forms";
       />
     </section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .search-section {
         overflow-x: hidden;
         background-color: #f2f4f7;
@@ -146,8 +146,7 @@ import { FormsModule } from "@angular/forms";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule, FormsModule],
+    ],
+    imports: [CommonModule, FormsModule]
 })
 export class SearchFormComponent {}

@@ -3,8 +3,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-footer",
-  template: `
+    selector: "app-footer",
+    template: `
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-logo">
@@ -110,8 +110,8 @@ import { CommonModule } from "@angular/common";
       </div>
     </footer>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .site-footer {
         background-color: #0066cc;
         color: #fff;
@@ -209,8 +209,7 @@ import { CommonModule } from "@angular/common";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class FooterComponent {}

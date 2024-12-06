@@ -3,8 +3,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-body-type-search",
-  template: `
+    selector: "app-body-type-search",
+    template: `
     <section class="body-type-search">
       <h2 class="section-title">Поиск авто по кузову</h2>
       <div class="body-type-options">
@@ -31,8 +31,8 @@ import { CommonModule } from "@angular/common";
       <a href="#" class="show-more">Показать все седаны</a>
     </section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .body-type-search {
         background-color: #f9fafb;
         padding: 40px 0;
@@ -114,9 +114,8 @@ import { CommonModule } from "@angular/common";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class BodyTypeSearchComponent {
   bodyTypeCars = [

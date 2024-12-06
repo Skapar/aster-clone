@@ -3,8 +3,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-popular-cars",
-  template: `
+    selector: "app-popular-cars",
+    template: `
     <section class="popular-cars">
       <h2 class="section-title">Популярные автомобили</h2>
       <div class="popular-cars-grid">
@@ -20,8 +20,8 @@ import { CommonModule } from "@angular/common";
       </div>
     </section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .popular-cars {
         background-color: #fff;
         padding: 40px 0;
@@ -64,9 +64,8 @@ import { CommonModule } from "@angular/common";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class PopularCarsComponent {
   popularCarsColumns = [

@@ -5,8 +5,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "search-filters",
-  template: `
+    selector: "search-filters",
+    template: `
     <div class="search-filters">
       <div class="filter-options">
         <button class="filter-btn active">Все</button>
@@ -29,8 +29,8 @@ import { CommonModule } from "@angular/common";
       </button>
     </div>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .search-filters {
         display: flex;
         align-items: center;
@@ -90,8 +90,7 @@ import { CommonModule } from "@angular/common";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class SearchFilters {}

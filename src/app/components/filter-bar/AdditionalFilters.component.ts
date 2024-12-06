@@ -5,8 +5,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "additional-filters",
-  template: `
+    selector: "additional-filters",
+    template: `
     <div class="additional-filters">
       <button class="filter-btn">
         <img
@@ -54,8 +54,8 @@ import { CommonModule } from "@angular/common";
       </button>
     </div>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .additional-filters {
         display: flex;
         margin-top: 24px;
@@ -90,8 +90,7 @@ import { CommonModule } from "@angular/common";
         padding: 2px 4px;
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class AdditionalFilters {}

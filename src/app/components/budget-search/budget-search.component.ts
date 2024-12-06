@@ -3,8 +3,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-budget-search",
-  template: `
+    selector: "app-budget-search",
+    template: `
     <section class="budget-search">
       <h2 class="section-title">Поиск авто по бюджету</h2>
       <div class="budget-options">
@@ -29,8 +29,8 @@ import { CommonModule } from "@angular/common";
       <a href="#" class="show-more">Показать все авто до 5 млн., тг</a>
     </section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .budget-search {
         background-color: #f9fafb;
         padding: 40px 0;
@@ -112,9 +112,8 @@ import { CommonModule } from "@angular/common";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule],
+    ],
+    imports: [CommonModule]
 })
 export class BudgetSearchComponent {
   budgetCars = [

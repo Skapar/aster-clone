@@ -4,8 +4,8 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 
 @Component({
-  selector: "app-credit-calculator",
-  template: `
+    selector: "app-credit-calculator",
+    template: `
     <section class="credit-calculator">
       <div class="calculator-form">
         <h2 class="calculator-title">Покупайте авто в кредит на Aster.kz</h2>
@@ -58,8 +58,8 @@ import { FormsModule } from "@angular/forms";
       </div>
     </section>
   `,
-  styles: [
-    `
+    styles: [
+        `
       .credit-calculator {
         display: flex;
         background-color: #fff;
@@ -139,9 +139,8 @@ import { FormsModule } from "@angular/forms";
         }
       }
     `,
-  ],
-  standalone: true,
-  imports: [CommonModule, FormsModule],
+    ],
+    imports: [CommonModule, FormsModule]
 })
 export class CreditCalculatorComponent {
   carCost: number = 3000000;

@@ -5,8 +5,8 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "search-actions",
-  template: `
+    selector: "search-actions",
+    template: `
     <div class="search-actions">
       <button class="advanced-search-btn">
         <span>Расширенный поиск</span>
@@ -15,7 +15,7 @@ import { CommonModule } from "@angular/common";
       <button class="show-results-btn">Показать 18 307 авто</button>
     </div>
   `,
-  styles: [`
+    styles: [`
     .search-actions {
       display: flex;
       margin-top: 24px;
@@ -57,7 +57,6 @@ import { CommonModule } from "@angular/common";
       }
     }
   `],
-  standalone: true,
-  imports: [CommonModule],
+    imports: [CommonModule]
 })
 export class SearchActions {}

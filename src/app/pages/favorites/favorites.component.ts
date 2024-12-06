@@ -4,16 +4,14 @@ import { CommonModule, NgFor } from '@angular/common';
 import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
-  selector: 'app-favorites',
-  standalone: true,
-  templateUrl: './favorites.component.html',
-  styleUrls: ['./favorites.component.css'],
-  imports: [
-    HeaderComponent,
-    FooterComponent,
-    NgFor,
-
-  ]
+    selector: 'app-favorites',
+    templateUrl: './favorites.component.html',
+    styleUrls: ['./favorites.component.css'],
+    imports: [
+        HeaderComponent,
+        FooterComponent,
+        NgFor,
+    ]
 })
 export class FavoritesComponent {
   onEnter() {

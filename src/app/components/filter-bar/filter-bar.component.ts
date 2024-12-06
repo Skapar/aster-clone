@@ -7,14 +7,13 @@ import { CarSearchFormComponent} from '../car-search-form/CarSearchForm.componen
 import {CarSearchComponent} from '../car-search/car-search.component';
 
 @Component({
-  selector: 'app-filter-bar',
-  standalone: true,
-  imports: [
-    CarSearchFormComponent,
-    CarSearchComponent
-  ],
-  templateUrl: './filter-bar.component.html',
-  styleUrl: './filter-bar.component.css'
+    selector: 'app-filter-bar',
+    imports: [
+        CarSearchFormComponent,
+        CarSearchComponent
+    ],
+    templateUrl: './filter-bar.component.html',
+    styleUrl: './filter-bar.component.css'
 })
 export class FilterBarComponent {
 
