@@ -8,6 +8,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { registerLocaleData } from '@angular/common';
+import localeKz from '@angular/common/locales/kk';
+import { LOCALE_ID } from '@angular/core';
+
+registerLocaleData(localeKz, 'kk');
 
 @NgModule({
   declarations: [
@@ -23,7 +28,9 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule,
     MatIconModule,
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'kk' }
+  ],
   bootstrap: [AppComponent],
   // schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
