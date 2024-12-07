@@ -44,18 +44,14 @@
           <mat-form-field appearance="outline">
             <mat-label class = "search-form-title">Бренд</mat-label>
             <mat-select>
-              <mat-option value="55">Yokohama</mat-option>
-              <mat-option value="60">RoadX</mat-option>
-              <mat-option value="65">RXFrost</mat-option>
+              <mat-option *ngFor="let brand of uniqueBrands" [value]="brand">{{ brand }}</mat-option>
             </mat-select>
           </mat-form-field>
 
           <mat-form-field appearance="outline">
             <mat-label class = "search-form-title">Год</mat-label>
             <mat-select>
-              <mat-option value="55">2022</mat-option>
-              <mat-option value="60">2023</mat-option>
-              <mat-option value="65">2023</mat-option>
+              <mat-option *ngFor="let year of uniqueYears" [value]="year">{{ year }}</mat-option>
             </mat-select>
           </mat-form-field>
 

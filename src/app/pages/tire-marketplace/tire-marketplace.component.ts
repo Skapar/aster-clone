@@ -32,12 +32,16 @@ export class TireMarketplaceComponent implements OnInit {
   tires: Tire[] = [];
   filters: any = {};
   tires_count: number = 0;
+  uniqueBrands: string[] = [];
+  uniqueYears: number[] = [];
 
   constructor(private tireMarketplaceService: TireMarketplaceService) {}
 
   ngOnInit(): void {
     this.loadTires();
     this.loadTiresCount();
+    this.loadUniqueBrands();
+    this.loadUniqueYears();
   }
 
   loadTires(): void {
@@ -46,6 +50,8 @@ export class TireMarketplaceComponent implements OnInit {
       (data) => {
         this.tires = data.slice(3);
         console.log('Шины загружены:', this.tires);
+        this.loadUniqueBrands();
+        this.loadUniqueYears();
       },
       (error) => {
         console.error('Ошибка при загрузке шин:', error);
@@ -61,6 +67,15 @@ export class TireMarketplaceComponent implements OnInit {
         console.log('Количество шин:', this.tires_count);
       }
     )
+  }
+
+  loadUniqueBrands(): void {
+    this.uniqueBrands = [...new Set(this.tires.map(tire => tire.mark.name))];
+  }
+
+  loadUniqueYears(): void {
+    console.log(this.tires);
+    this.uniqueYears = [...new Set(this.tires.map(tire => tire.year))];
   }
 
   addToFavorites(tireId: number): void {
