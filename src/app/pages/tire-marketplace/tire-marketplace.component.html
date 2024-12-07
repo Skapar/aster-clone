@@ -8,36 +8,28 @@
           <mat-form-field appearance="outline">
             <mat-label class = "search-form-title">Ширина профиля</mat-label>
             <mat-select>
-              <mat-option value="205">205</mat-option>
-              <mat-option value="215">215</mat-option>
-              <mat-option value="225">225</mat-option>
+              <mat-option *ngFor="let width of uniqueWidths" [value]="width">{{ width }}</mat-option>
             </mat-select>
           </mat-form-field>
 
           <mat-form-field appearance="outline">
             <mat-label class = "search-form-title">Высота профиля</mat-label>
             <mat-select>
-              <mat-option value="55">55</mat-option>
-              <mat-option value="60">60</mat-option>
-              <mat-option value="65">65</mat-option>
+              <mat-option *ngFor="let height of uniqueHeights" [value]="height">{{ height }}</mat-option>
             </mat-select>
           </mat-form-field>
 
           <mat-form-field appearance="outline">
             <mat-label class = "search-form-title">Диаметр, в дюймах</mat-label>
             <mat-select>
-              <mat-option value="16">16</mat-option>
-              <mat-option value="17">17</mat-option>
-              <mat-option value="18">18</mat-option>
+              <mat-option *ngFor="let diameter of uniqueDiameters" [value]="diameter">{{ diameter }}</mat-option>
             </mat-select>
           </mat-form-field>
 
           <mat-form-field appearance="outline">
             <mat-label class = "search-form-title">Сезонность</mat-label>
             <mat-select>
-              <mat-option value="summer">Летние</mat-option>
-              <mat-option value="winter">Зимние</mat-option>
-              <mat-option value="all-season">Всесезонные</mat-option>
+              <mat-option *ngFor="let season of uniqueSeasons" [value]="season">{{ season }}</mat-option>
             </mat-select>
           </mat-form-field>
 
@@ -58,18 +50,14 @@
           <mat-form-field appearance="outline">
             <mat-label class = "search-form-title">Цена</mat-label>
             <mat-select>
-              <mat-option value="55">100</mat-option>
-              <mat-option value="60">200</mat-option>
-              <mat-option value="65">300</mat-option>
+              <mat-option *ngFor="let price of uniquePrices" [value]="price">{{ price }}</mat-option>
             </mat-select>
           </mat-form-field>
 
           <mat-form-field appearance="outline">
             <mat-label class = "search-form-title">Шипы</mat-label>
             <mat-select>
-              <mat-option value="55">55</mat-option>
-              <mat-option value="60">60</mat-option>
-              <mat-option value="65">65</mat-option>
+              <mat-option *ngFor="let stud of uniqueStuds" [value]="stud">{{ stud }}</mat-option>
             </mat-select>
           </mat-form-field>
 

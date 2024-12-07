@@ -34,6 +34,12 @@ export class TireMarketplaceComponent implements OnInit {
   tires_count: number = 0;
   uniqueBrands: string[] = [];
   uniqueYears: number[] = [];
+  uniqueWidths: number[] = [];
+  uniqueHeights: number[] = [];
+  uniqueDiameters: number[] = [];
+  uniqueSeasons: string[] = [];
+  uniquePrices: number[] = [];
+  uniqueStuds: string[] = [];
 
   constructor(private tireMarketplaceService: TireMarketplaceService) {}
 
@@ -50,6 +56,12 @@ export class TireMarketplaceComponent implements OnInit {
         console.log('Шины загружены:', this.tires);
         this.loadUniqueBrands();
         this.loadUniqueYears();
+        this.loadUniqueWidths();
+        this.loadUniqueHeights();
+        this.loadUniqueDiameters();
+        this.loadUniqueSeasons();
+        this.loadUniquePrices();
+        this.loadUniqueStuds();
       },
       (error) => {
         console.error('Ошибка при загрузке шин:', error);
@@ -75,6 +87,37 @@ export class TireMarketplaceComponent implements OnInit {
     console.log(this.tires);
     this.uniqueYears = [...new Set(this.tires.map(tire => tire.year))];
   }
+
+  loadUniqueWidths(): void {
+    this.uniqueWidths = [...new Set(this.tires.map(tire => tire.width))];
+    console.log('Уникальные ширины:', this.uniqueWidths);
+  }
+
+  loadUniqueHeights(): void {
+    this.uniqueHeights = [...new Set(this.tires.map(tire => tire.height))];
+    console.log('Уникальные высоты:', this.uniqueHeights);
+  }
+
+  loadUniqueDiameters(): void {
+    this.uniqueDiameters = [...new Set(this.tires.map(tire => tire.radius))];
+    console.log('Уникальные диаметры:', this.uniqueDiameters);
+  }
+
+  loadUniqueSeasons(): void {
+    this.uniqueSeasons = [...new Set(this.tires.map(tire => tire.season))];
+    console.log('Уникальные сезоны:', this.uniqueSeasons);
+  }
+
+  loadUniquePrices(): void {
+    this.uniquePrices = [...new Set(this.tires.map(tire => tire.price))];
+    console.log('Уникальные цены:', this.uniquePrices);
+  }
+
+  loadUniqueStuds(): void {
+    this.uniqueStuds = [...new Set(this.tires.map(tire => tire.statusCode))];
+    console.log('Уникальные шипы:', this.uniqueStuds);
+  }
+
 
   addToFavorites(tireId: number): void {
     console.log(`Added tire ${tireId} to favorites`);
