@@ -40,8 +40,6 @@ export class TireMarketplaceComponent implements OnInit {
   ngOnInit(): void {
     this.loadTires();
     this.loadTiresCount();
-    this.loadUniqueBrands();
-    this.loadUniqueYears();
   }
 
   loadTires(): void {
