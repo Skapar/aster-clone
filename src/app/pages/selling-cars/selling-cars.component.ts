@@ -1,99 +1,39 @@
-import { Component } from '@angular/core';
-import {NgForOf} from "@angular/common";
-import {FilterBarComponent} from '../../components/filter-bar/filter-bar.component';
+import { Component, OnInit } from '@angular/core';
+import { NgForOf } from "@angular/common";
+import { Car } from '../models';
+import { SellingCarsService } from './selling-cars.service';
 
 @Component({
-    selector: 'app-selling-cars',
-    imports: [
-        NgForOf,
-        FilterBarComponent
-    ],
-    templateUrl: './selling-cars.component.html',
-    styleUrl: './selling-cars.component.css'
+  selector: 'app-selling-cars',
+  imports: [
+    NgForOf,
+  ],
+  templateUrl: './selling-cars.component.html',
+  standalone: true,
+  styleUrls: ['./selling-cars.component.css'], // Fixed the typo: `styleUrl` -> `styleUrls`
 })
-export class SellingCarsComponent {
- Cars = [
-   {
-     image:
-       "https://files2.aster.kz/market/aster/2024-10/287528_bd9650d9-b165-4683-b0c1-c10553fbf5a2_L_resolution2084x1173.webp",
-     price: "11 250 000 ₸",
-     monthlyPrice: "от 330 271₸/мес",
-     name: "VOLKSWAGEN TIGUAN 2021\n",
-     specs: "1.4 л • Робот • Передний",
-     location: "Алматы",
-     date: "14 октября",
-   },
-   {
-     image:
-       "https://files2.aster.kz/market/aster/2024-10/287528_bd9650d9-b165-4683-b0c1-c10553fbf5a2_L_resolution2084x1173.webp",
-     price: "11 250 000 ₸",
-     monthlyPrice: "от 330 271₸/мес",
-     name: "VOLKSWAGEN TIGUAN 2021\n",
-     specs: "1.4 л • Робот • Передний",
-     location: "Алматы",
-     date: "14 октября",
-   },
-   {
-     image:
-       "https://files2.aster.kz/market/aster/2024-10/287528_bd9650d9-b165-4683-b0c1-c10553fbf5a2_L_resolution2084x1173.webp",
-     price: "11 250 000 ₸",
-     monthlyPrice: "от 330 271₸/мес",
-     name: "VOLKSWAGEN TIGUAN 2021\n",
-     specs: "1.4 л • Робот • Передний",
-     location: "Алматы",
-     date: "14 октября",
-   },
-   {
-     image:
-       "https://files2.aster.kz/market/aster/2024-10/287528_bd9650d9-b165-4683-b0c1-c10553fbf5a2_L_resolution2084x1173.webp",
-     price: "11 250 000 ₸",
-     monthlyPrice: "от 330 271₸/мес",
-     name: "VOLKSWAGEN TIGUAN 2021\n",
-     specs: "1.4 л • Робот • Передний",
-     location: "Алматы",
-     date: "14 октября",
-   },
-   {
-     image:
-       "https://files2.aster.kz/market/aster/2024-10/287528_bd9650d9-b165-4683-b0c1-c10553fbf5a2_L_resolution2084x1173.webp",
-     price: "11 250 000 ₸",
-     monthlyPrice: "от 330 271₸/мес",
-     name: "VOLKSWAGEN TIGUAN 2021\n",
-     specs: "1.4 л • Робот • Передний",
-     location: "Алматы",
-     date: "14 октября",
-   },
-   {
-     image:
-       "https://files2.aster.kz/market/aster/2024-10/287528_bd9650d9-b165-4683-b0c1-c10553fbf5a2_L_resolution2084x1173.webp",
-     price: "11 250 000 ₸",
-     monthlyPrice: "от 330 271₸/мес",
-     name: "VOLKSWAGEN TIGUAN 2021\n",
-     specs: "1.4 л • Робот • Передний",
-     location: "Алматы",
-     date: "14 октября",
-   },
-   {
-     image:
-       "https://files2.aster.kz/market/aster/2024-10/287528_bd9650d9-b165-4683-b0c1-c10553fbf5a2_L_resolution2084x1173.webp",
-     price: "11 250 000 ₸",
-     monthlyPrice: "от 330 271₸/мес",
-     name: "VOLKSWAGEN TIGUAN 2021\n",
-     specs: "1.4 л • Робот • Передний",
-     location: "Алматы",
-     date: "14 октября",
-   },
-   {
-     image:
-       "https://files2.aster.kz/market/aster/2024-10/287528_bd9650d9-b165-4683-b0c1-c10553fbf5a2_L_resolution2084x1173.webp",
-     price: "11 250 000 ₸",
-     monthlyPrice: "от 330 271₸/мес",
-     name: "VOLKSWAGEN TIGUAN 2021\n",
-     specs: "1.4 л • Робот • Передний",
-     location: "Алматы",
-     date: "14 октября",
-   },
+export class SellingCarsComponent implements OnInit {
+  Cars: Car[] = []; // List to store retrieved cars
+  errorMessage: string = ''; // Variable to store error messages (if any)
 
- ]
+  constructor(private cs: SellingCarsService) {}
 
+  ngOnInit(): void {
+    this.getCars();
+  }
+
+  getCars(): void {
+    this.cs.listOfCars('camry', 30) // Optionally pass model and limit
+      .subscribe({
+        next: (data) => {
+          this.Cars = data; // Assign the retrieved cars to the `Cars` array
+          console.log("Cars retrieved:", this.Cars); // Debugging
+
+        },
+        error: (err) => {
+          console.error("Error retrieving cars:", err);
+          this.errorMessage = 'Failed to retrieve car data. Please try again later.';
+        }
+      });
+  }
 }

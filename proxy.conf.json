@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://freetestapi.com/api/v1/cars",
+    "secure": true
+  }
+}
