@@ -86,7 +86,7 @@
     <h2 class="section-title">БУ шины в Казахстане</h2>
     <div class="tire-grid">
       <mat-card *ngFor="let tire of tires" class="tire-card">
-        <img mat-card-image [src]="tire.photos[0]" [alt]="tire.model.name">
+        <app-photo-slider [photos]="tire.photos"></app-photo-slider>
         <mat-card-content>
           <h3>{{ tire.model.name }} </h3>
           <p class="price">{{ tire.price | currency:'KZT':'symbol':'1.0-0' }}</p>

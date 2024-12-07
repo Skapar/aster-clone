@@ -8,6 +8,8 @@ import { tireJson } from '../../data/service/json/tireJson'
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { TireMarketplaceService, Tire } from './tire-marketplace.service';
+import { PhotoSliderComponent } from '../../components/photo-slider/photo-slider.component';
+import { skip } from 'rxjs/operators';
 
 @Component({
     selector: 'app-tire-marketplace',
@@ -21,7 +23,8 @@ import { TireMarketplaceService, Tire } from './tire-marketplace.service';
         NgFor,
         CommonModule,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        PhotoSliderComponent
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
@@ -36,9 +39,10 @@ export class TireMarketplaceComponent implements OnInit {
   }
 
   loadTires(): void {
-    this.tireMarketplaceService.getFilteredTires(this.filters).subscribe(
+    this.tireMarketplaceService.getFilteredTires(this.filters)
+    .subscribe(
       (data) => {
-        this.tires = data;
+        this.tires = data.slice(3);
         console.log('Шины загружены:', this.tires);
       },
       (error) => {

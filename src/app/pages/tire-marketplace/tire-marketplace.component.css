@@ -60,19 +60,8 @@
   margin-bottom: 1rem;
 }
 
-.tire-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.tire-card {
-  display: flex;
-  flex-direction: column;
-}
-
 .tire-card img {
-  height: 200px;
+  height: 100px;
   object-fit: cover;
 }
 
@@ -106,4 +95,30 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+}
+
+.tire-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.tire-card {
+  width: 300px; /* Ограничение ширины карточки */
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
 }
