@@ -32,7 +32,8 @@
       "name": "api-get-cache",
       "urls": [
         "https://api.api-ninjas.com/v1/cars*",
-        "https://aster.kz/api-tires/web/tires-set/filtered*"
+        "https://aster.kz/api-tires/web/tires-set/filtered*",
+        "https://aster.kz/api-tires/web/tires-set/filtered/count*"
       ],
       "cacheConfig": {
         "maxSize": 100,

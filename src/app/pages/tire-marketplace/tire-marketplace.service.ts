@@ -63,6 +63,7 @@ export interface Tire {
 })
 export class TireMarketplaceService {
   private apiUrl = 'https://aster.kz/api-tires/web/tires-set/filtered';
+  private countUrl = 'https://aster.kz/api-tires/web/tires-set/filtered/count';
 
   constructor(private http: HttpClient) {}
 
@@ -75,5 +76,21 @@ export class TireMarketplaceService {
       .pipe(
         map(response => response.list)
       );
+  }
+
+  getTiresCount(filters: any): Observable<number> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+
+    });
+
+    const body = {
+      limit: 24,
+      offset: 0,
+      season: null,
+      ...filters
+    };
+
+    return this.http.post<number>(this.countUrl, body, { headers });
   }
 }

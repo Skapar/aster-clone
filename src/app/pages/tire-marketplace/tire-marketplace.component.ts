@@ -31,11 +31,13 @@ import { skip } from 'rxjs/operators';
 export class TireMarketplaceComponent implements OnInit {
   tires: Tire[] = [];
   filters: any = {};
+  tires_count: number = 0;
 
   constructor(private tireMarketplaceService: TireMarketplaceService) {}
 
   ngOnInit(): void {
     this.loadTires();
+    this.loadTiresCount();
   }
 
   loadTires(): void {
@@ -49,6 +51,16 @@ export class TireMarketplaceComponent implements OnInit {
         console.error('Ошибка при загрузке шин:', error);
       }
     );
+  }
+
+  loadTiresCount(): void {
+    this.tireMarketplaceService.getTiresCount(this.filters)
+    .subscribe(
+      (data) => {
+        this.tires_count = data;
+        console.log('Количество шин:', this.tires_count);
+      }
+    )
   }
 
   addToFavorites(tireId: number): void {
